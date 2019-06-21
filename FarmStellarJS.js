@@ -85,6 +85,16 @@ function achathome(){/*fonction achat maison*/
 		gestionstone.innerHTML=nbstone;
 
 		case3btn.style.display="block"; /*affichage maison case 3*/
+	}else if(nbwood>=woodhome && nbstone>=stonehome && nbmetal>=metalhome /*&& case3btn.style.display=="block"*/){		
+
+		nbwood=nbwood-woodhome;
+		nbmetal=nbmetal-metalhome;
+		nbstone=nbstone-stonehome;
+		gestionwood.innerHTML=nbwood;
+		gestionmetal.innerHTML=nbmetal;
+		gestionstone.innerHTML=nbstone;
+
+		case4btn.style.display="block"; /*affichage maison case 4*/
 	}else{
 		alert("vous n'avez pas les ressources nécessaires !!!");
 	}

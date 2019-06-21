@@ -1,0 +1,8 @@
+iconestoneindex: https://www.flaticon.com/free-icon/stone_836972
+iconestone: https://www.flaticon.com/free-icon/coal_1275443
+
+iconewoodindex: https://www.flaticon.com/free-icon/log_222436
+iconewood: https://www.flaticon.com/free-icon/axes_1889076
+
+iconemetalindex: https://www.flaticon.com/free-icon/ingot_138540
+iconemetal: https://www.flaticon.com/free-icon/mining_1843721

@@ -12,43 +12,110 @@
 	<div id="headertitre">
 	</div>
 
+
+
+
+
+
+
+	<div id="magasin" class="modal">
+  	<div class="modalcontent">
+    	<span class="close">&times;</span>
+    	<div id="headermagasin">
+    	<h1> 🛒Boutique🛒</h1>
+    	</div>
+    	<div id="listeitems">
+    		
+    		<li id="itemwood">
+    			<img class="itm_icone" src="RessourcesCSS/iconewood.png">
+    			<h4 class="itm_title">Scierie</h4>
+    			<li id="woodwood"><img src="RessourcesCSS/icone_item_wood.png">nbwood</li>
+    			<li id="stonewood"><img src="RessourcesCSS/icone_item_stone.png">nbstone</li>
+    			<li id="metalwood"><img src="RessourcesCSS/icone_item_metal.png">nbmetal</li>
+    			<button id="btnwoodup" onclick="autowood()">UP</button>
+    		</li>
+    		
+    		<li id="itemcareer">
+    			<img class="itm_icone" src="RessourcesCSS/iconestone.png">
+    			<h4 class="itm_title">Carrière</h4>
+    			<li id="woodcareer"><img src="RessourcesCSS/icone_item_wood.png">nbwood</li>
+    			<li id="stonecareer"><img src="RessourcesCSS/icone_item_stone.png">nbstone</li>
+    			<li id="metalcareer"><img src="RessourcesCSS/icone_item_metal.png">nbmetal</li>
+    			<button id="btncareer" onclick="achatcareer()">ACHAT</button>
+    			<button id="btncareerup" onclick="autostone()" >UP</button>
+    		</li>
+    		
+    		<li id="itemmine">
+    			<img class="itm_icone" src="RessourcesCSS/iconemetal.png">
+    			<h4 class="itm_title">Mine</h4>
+    			<li id="woodmine"><img src="RessourcesCSS/icone_item_wood.png"></li>
+    			<li><span id="stonemine"></span><img src="RessourcesCSS/icone_item_stone.png">2222</li>
+    			<li id="metalmine"><img src="RessourcesCSS/icone_item_metal.png">2222</li>
+    			<button id="btnmine" onclick="achatmine()">ACHAT</button>
+    			<button id="btnmineup" onclick="autometal()">UP</button>
+    		</li>
+    		
+    		<li id="itemhome">
+    			<img class="itm_icone" src="RessourcesCSS/iconehome.png">
+    			<h4 class="itm_title">Maison</h4>
+    			<li id="woodhome"><img src="RessourcesCSS/icone_item_wood.png">nbwood</li>
+    			<li id="stonehome"><img src="RessourcesCSS/icone_item_stone.png">nbstone</li>
+    			<li id="metalhome"><img src="RessourcesCSS/icone_item_metal.png">nbmetal</li>
+    			<button id="btnhome" onclick="achathome()">ACHAT</button>
+    			<button id="btnhomeup">UP</button>
+    		</li> 	
+  	</div>		
+</div>
+</div>
+	
+
+
+
+
+
 	<div id="zonejeu">
 		
 		<div id="casecontainer">
-			<div id="case1" class="case">
-				<p>CASE 1</p>
-			</div>
+			<div id="x1" class="x">
+				<div id="case1" class="case">
+					<p id="case1btn" class="casebtn"></p>
+				</div>
 			
-			<div id="case2" class="case">
-				<input type="image" src="RessourcesCSS/iconewood.png">
-			</div>
+				<div id="case2" class="case">
+					<input id="case2btn" class="casebtn" type="image" src="RessourcesCSS/iconewood.png" onclick="ressourcewood()">
+				</div>
 			
-			<div id="case3" class="case">
-				<input type="image" src="RessourcesCSS/iconehome.png">
+				<div id="case3" class="case">
+					<input id="case3btn" class="casebtn" type="image" src="RessourcesCSS/iconehome.png">
+				</div>
 			</div>
+			<div id="x2" class="x">
 			
-			<div id="case4" class="case">
-				<input type="image" src="RessourcesCSS/iconehome.png">				
+				<div id="case4" class="case">
+					<input id="case4btn" class="casebtn" type="image" src="RessourcesCSS/iconehome.png">				
+				</div>
+			
+				<div id="case5" class="case">	
+				<p id="case5btn" class="casebtn"></p>				
+				</div>
+			
+				<div id="case6" class="case">	
+				<p id="case6btn" class="casebtn"></p>	
+				</div>
 			</div>
+			<div id="x3" class="x">
 			
-			<div id="case5" class="case">	
-			<p>CASE 5</p>				
-			</div>
+				<div id="case7" class="case">
+					<input id="case7btn" class="casebtn" type="image" src="RessourcesCSS/iconestone.png" onclick="ressourcestone()">
+				</div>
 			
-			<div id="case6" class="case">	
-			<p>CASE 6</p>	
-			</div>
+				<div id="case8" class="case">	
+				<p id="case8btn" class="casebtn"></p>				
+				</div>
 			
-			<div id="case7" class="case">
-				<input type="image" src="RessourcesCSS/iconestone.png">
-			</div>
-			
-			<div id="case8" class="case">	
-			<p>CASE 8</p>				
-			</div>
-			
-			<div id="case9" class="case">
-				<input type="image" src="RessourcesCSS/iconemetal.png">
+				<div id="case9" class="case">
+					<input id="case9btn" class="casebtn" type="image" src="RessourcesCSS/iconemetal.png" onclick="ressourcemetal()">
+				</div>
 			</div>
 		</div>
 
@@ -78,7 +145,7 @@
 
 
 
-
+<script src="FarmStellarJS.js"></script>
 
 </body>
 </html>

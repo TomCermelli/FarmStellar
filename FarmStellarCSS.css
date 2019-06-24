@@ -1,35 +1,333 @@
 body{
-	background-image: url("RessourcesCSS/background.jpg");
+	background-image: url("RessourcesCSS/backgroundfinal.png");
 }
+/*Header titre-------------------------------------------*/
+#headertitre{
+  width: 1920px;
+  height: 220px;
+  background-image: url('RessourcesCSS/headerfarmstellar.png');
+}
+
+
+/*fin--------------------------------------Header titre-------------------------------------------*/
+
+/*-----MODAL-----*/
 #magasin {
-  display: block; 
+  display: none; 
   position: fixed; 
   z-index: 1; 
   padding-top: 100px; 
   left: 0;
   top: 0;
   width: 100%; 
-  height: 100%; 
-  overflow: auto; 
+  height: 90%; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);
 }
+
 .modalcontent {
-position: absolute;
-    max-width: 450px;
-    width: auto;
+  position: absolute;
+  font-size: 1.3em;
+    width: 750px;
     padding: 20px;
     background: #ddd;
     border-radius: 5px;
-    top: 50%;
     left: 50%;
+    top:50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0px 0px 35px rgba(0,0,0,0.6);
-
-}
-.modalcontent {
-font-weight: 250;
+    font-weight: 250;
     text-align: center;
     padding-bottom:50px;
+    opacity: 0.7;
+}
+
+#headermagasin h1
+{
+margin: 0 0 40px 0;
+}
+
+
+.menuvertical
+{
+padding:0;
+margin:0;
+list-style:none;
+text-align: center;
+width: 180px;
+}
+
+.itemsliste /*container*/
+{
+display: flex;
+}
+
+.linone /*enlever les points sur les li*/
+{
+text-decoration: none;
+list-style: none;
+list-style-type:none;
+}
+
+.itm_title /*h4 scierie , mine etc...*/
+{
+text-decoration: underline;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.magasinwood
+{
+border-right:1px solid rgba(0, 0, 0, 0.5);
+padding-right: 10px; 
+
+
+}
+
+.incre /*Bouton increment de la scierie*/
+{
+margin: 20px 0 20px 0;
+}
+
+.incre li
+{
+margin: 5px;
+}
+
+.magasincareer
+{
+padding: 0 10px 0 10px;
+border-right:1px solid rgba(0, 0, 0, 0.2);
+}
+
+.magasincareer #btncareer
+{
+margin: 10px 0 0 0;
+}
+
+.incre2
+{
+margin: 20px 0 20px 0;
+}
+
+.incre2 li
+{
+margin: 5px;
+}
+
+.magasinmine
+{
+padding: 0 10px 0 10px;
+border-right:1px solid rgba(0, 0, 0, 0.2);
+}
+
+.magasinmine #btnmine
+{
+margin: 10px 0 0 0;
+}
+
+.incre3
+{
+margin: 20px 0 20px 0;
+}
+
+.incre3 li
+{
+margin: 5px;
+}
+
+
+.magasinhome
+{
+padding: 0 10px 0 10px;
+}
+
+.magasinhome #btnhome
+{
+margin: 10px 0 0 0;
+}
+
+.vente
+{
+display: flex;
+margin: 0 0 0 0;
+}
+/*-----FIN MODAL-----*/
+
+
+#zonejeu {
+display: inline-flex;
+  } 
+
+#casecontainer {
+ display: flex;
+ width: 1000px;
+ height: 700px;
+
+ justify-content: space-between;
+ margin-left: 400px;
+ margin-top: -50px;
+ z-index: 2;
+  } 
+  #casecontainer input{
+  outline: 0;
+  }
+.case {
+  width: 230px;
+  height: 170px;
+  margin-top: 20px;
+  } 
+  #case1{
+   width: 180px;
+  height: 110px;
+  margin-left: 140px;
+  margin-top: 100px;
+} 
+#case2{
+  width: 180px;
+  height: 110px;
+  margin-top: 20px;
+  margin-left: 130px;
+}
+#case2btn{
+  margin-top: -50px;
+}
+#case3{
+  margin-top: 50px;
+  margin-left: 40px;
+  width: 210px;
+  height: 150px;
+}
+#case3btn{
+  display: none;
+  margin-top: -50px;
+ margin-left: 20px;
+}
+
+#case4{
+   width: 180px;
+  height: 110px;
+  margin-top: 100px;
+  margin-left: 20px;
+  }
+#case4btn{
+    display: none;
+    margin-top: -30px;
+  }
+#case5{
+  width: 180px;
+  height: 110px;
+  margin-top: 20px;
+  margin-left: 40px;
+  }
+  #case6{
+  margin-right: 60px;
+  margin-top: 40px;
+    width: 210px;
+  height: 150px;
+}
+  #case7{
+  width: 170px;
+  height: 100px;
+  margin-top: 110px;
+  margin-left: -40px;
+  }
+
+  #case7btn{
+    display: none;
+    margin-left: -15px;
+    margin-top: -7px;
+  }
+  #case8{
+    width: 180px;
+  height: 110px;
+  margin-top: 40px;
+  margin-right: 60px;
+  margin-left: -40px;
+}
+#case9{
+  margin-top: 40px;
+  margin-right: 100px;
+  width: 210px;
+  height: 150px;
+}
+#case9btn{
+  display: none;
+  margin-top: -40px;
+}
+
+#gestion{
+height: 600px;
+width: 300px;
+display: flex;
+background-image: url('RessourcesCSS/fondgestion.png');
+background-repeat: no-repeat;
+}
+
+#gestionwood{
+  color: white;
+  font-family: 'Acme', sans-serif;
+}
+#gestionstone{
+  color: white;
+  font-family: 'Acme', sans-serif;
+}
+
+#gestionmetal{
+  color: white;
+  font-family: 'Acme', sans-serif;
+
+}
+
+#gestion ul{
+list-style-type: none;
+}
+
+.icones{
+  padding-left: 15px;
+}
+
+.buttonstyle{
+  padding:6px 0 6px 0;
+  font:Bold 13px Acme;
+  background:#d34836;
+  color:#fff;
+  width:90px;
+  border-radius:2px;
+  border:none;
+}
+
+#signature{
+  width: 1000px;
+  text-align: center;
+  color: #C0C0C0;
+  background-color: rgb(35 31 32);
+  height: 80px;
+  padding-top: 10px;
+  margin-top: -80px;
+ margin-left: 400px;
+ border-radius: 30px;
+ font-family: 'Acme', sans-serif;
+}
+#catastrophe{
+  outline: 0;
+  display: none;
+  width: 1000px;
+  height: 700px;
+  z-index: 50;
+  position:absolute;
+  opacity: 0.8;
+  margin-left: 400px;
+}
+#magasinbtn{
+  outline: 0;
+  margin-top:50px;
+  width:85px;
+  height:85px;
+  background:#fafafa;
+  box-shadow:2px 2px 8px #aaa;
+  font:bold 13px Arial;
+  border-radius:50%;
+  color:#555;
+}

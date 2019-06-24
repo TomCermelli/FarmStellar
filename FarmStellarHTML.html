@@ -2,7 +2,9 @@
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="FarmStellarCSS.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet">
 	<title>Bienvenue sur Farm Stellar !</title>
 
 </head>
@@ -10,62 +12,161 @@
 <body>
 	
 	<div id="headertitre">
+		
 	</div>
 
+
+	<div id="magasin" class="modal">
+  	<div class="modalcontent">
+    	<span id="close"></span>
+    	<div id="headermagasin">
+    	<h1> 🛒Boutique🛒</h1>
+    	</div>
+    	<div class="itemsliste" id="listeitems">
+    		
+
+    	<div class="magasinwood">
+    			<img class="itm_icone" src="RessourcesCSS/iconewood.png">
+    			<h4 class="itm_title">Scierie</h4>
+    			<li class="linone"><span id="woodwood"></span><img src="RessourcesCSS/icone_item_wood.png"></li>
+    			<li class="linone"><span id="stonewood"></span><img src="RessourcesCSS/icone_item_stone.png"></li>
+   				<li class="linone"><span id="metalwood"></span><img src="RessourcesCSS/icone_item_metal.png"></li>
+   				<!--sousmenu vertical-->
+    			<div class="incre">
+    				<li class="linone"><button type="button" onclick="incrementwood()"><span id="incrementationwood"></span><img src="RessourcesCSS/icone_item_wood.png">incrément wood</button></li>
+					<li class="linone"><button type="button"  onclick="incrementwood10()"><span id="incrementationwood10"></span><img src="RessourcesCSS/icone_item_wood.png">incrément woodx10</button></li>
+					<li class="linone"><button type="button"  onclick="incrementwood100()"><span id="incrementationwood100"></span><img src="RessourcesCSS/icone_item_wood.png">incrément woodx100</button></li>
+				</div>
+				<!---->					
+				<button id="btnwoodup" onclick="autowood()">Ameilioration de la scierie</button>
+				<div class="vente">
+					<button type="button" id="sellws" onclick="sellwoodstone()">750 wood for 750 stone</button>
+					<button type="button" id="sellwm" onclick="sellwoodmetal()">750 wood for 750 metal</button></p>
+				</div>
+    		</div>
+
+
+
+
+
+
+
+
+
+    		<div class="magasincareer">
+    			<img class="itm_icone" src="RessourcesCSS/iconestone.png">
+    			<h4 class="itm_title">Carrière</h4>
+    			<li class="linone"><span id="woodcareer"></span><img src="RessourcesCSS/icone_item_wood.png"></li>
+    			<li class="linone"><span id="stonecareer"></span><img src="RessourcesCSS/icone_item_stone.png"></li>
+    			<li class="linone"><span id="metalcareer"></span><img src="RessourcesCSS/icone_item_metal.png"></li>
+    			<button id="btncareer" onclick="achatcareer()">Achat d'une carrière</button>
+    				<div class="incre2">
+    					<li class="linone"><button type="button" onclick="incrementstone()"><span id="incrementationstone"></span><img src="RessourcesCSS/icone_item_stone.png">incrément stone</button></li>
+						<li class="linone"><button type="button"  onclick="incrementstone10()"><span id="incrementationstone10"></span><img src="RessourcesCSS/icone_item_stone.png">incrément stonex10 </button></li>
+						<li class="linone"><button type="button" onclick="incrementstone100()"><span id="incrementationstone100"></span><img src="RessourcesCSS/icone_item_stone.png">incrément stonex100 </button></li>
+					</div>
+				<button id="btnstoneup" class="buttonstyle" onclick="autostone()">Améliorations des carrières</button>
+				<div class="vente">
+					<button type="button" id="sellsw" onclick="sellstonewood()">750 stone for 750 wood </button>
+					<button type="button" id="sellsm" onclick="sellstonemetal()">750 stone for 750 metal</button>
+				</div>
+    		</div>
+    		<div class ="magasinmine">
+    			<img class="itm_icone" src="RessourcesCSS/iconemetal.png">
+    			<h4 class="itm_title">Mine</h4>
+    			<li class="linone"><span id="woodmine"></span><img src="RessourcesCSS/icone_item_wood.png"></li>
+    			<li class="linone"><span id="stonemine"></span><img src="RessourcesCSS/icone_item_stone.png"></li>
+    			<li class="linone"><span id="metalmine"></span><img src="RessourcesCSS/icone_item_metal.png"></li>
+    			<button id="btnmine" onclick="achatmine()">Achat d'une mine</button>
+    				<div class="incre3">
+    					<li class="linone"><button type="button"  onclick="incrementmetal()"><span id="incrementationmetal"></span><img src="RessourcesCSS/icone_item_metal.png">incrément metal</button></li>
+						<li class="linone"><button type="button"  onclick="incrementmetal10()"><span id="incrementationmetal10"></span><img src="RessourcesCSS/icone_item_metal.png">incrément metalx10</button></li>
+						<li class="linone"><button type="button"  onclick="incrementmetal100()"><span id="incrementationmetal100"></span><img src="RessourcesCSS/icone_item_metal.png">incrément metalx100</button></li>
+					</div>
+    			<button id="btnmineup" onclick="autometal()">Améliorations des mines</button>
+    			<div class="vente">
+					<button type="button" id="sellmw" onclick="sellmetalwood()">750  iron for  750 wood</button>
+					<button type="button" id="sellms" onclick="sellmetalstone()">750 iron for 750 stone</button>
+				</div>
+    		</div>
+    		<div class="magasinhome">
+    			<img class="itm_icone" src="RessourcesCSS/iconehome.png">
+    			<h4 class="itm_title">Maison</h4>
+    			<li class="linone"><span id="woodhome"></span><img src="RessourcesCSS/icone_item_wood.png"></li>
+    			<li class="linone"><span id="stonehome"></span><img src="RessourcesCSS/icone_item_stone.png"></li>
+   				<li class="linone"><span id="metalhome"></span><img src="RessourcesCSS/icone_item_metal.png"></li>
+   				<button id="btnhome" onclick="achathome()">Achat de maison</button>
+    		</div>	
+  	</div>		
+</div>
+</div>
+	
+
+
+
+
+
 	<div id="zonejeu">
-		
+	  <div id="cata">	  	
+	  	<input id="catastrophe" class="casebtn" type="image" src="https://media.giphy.com/media/3o7TKCraTU442nGaJi/giphy.gif" onclick="catastropheStop()">	
 		<div id="casecontainer">
-			<div id="case1" class="case">
-				<p>CASE 1</p>
-			</div>
+			<div id="x1" class="x">
+				<div id="case1" class="case">
+					<p id="case1btn" class="casebtn"></p>
+				</div>
 			
-			<div id="case2" class="case">
-				<input type="image" src="RessourcesCSS/iconewood.png">
-			</div>
+				<div id="case2" class="case">
+					<input id="case2btn" class="casebtn" type="image" src="RessourcesCSS/item_scieriefinal.png" onclick="ressourcewood()">
+				</div>
 			
-			<div id="case3" class="case">
-				<input type="image" src="RessourcesCSS/iconehome.png">
+				<div id="case3" class="case">
+					<input id="case3btn" class="casebtn" type="image" src="RessourcesCSS/item_homefinal2.png">
+				</div>
 			</div>
+			<div id="x2" class="x">
 			
-			<div id="case4" class="case">
-				<input type="image" src="RessourcesCSS/iconehome.png">				
+				<div id="case4" class="case">
+					<input id="case4btn" class="casebtn" type="image" src="RessourcesCSS/item_homefinal.png">				
+				</div>
+			
+				<div id="case5" class="case">	
+				<p id="case5btn" class="casebtn"></p>	
+				</div>
+			
+				<div id="case6" class="case">	
+				<p id="case6btn" class="casebtn"></p>	
+				</div>
 			</div>
+			<div id="x3" class="x">
 			
-			<div id="case5" class="case">	
-			<p>CASE 5</p>				
-			</div>
+				<div id="case7" class="case">
+					<input id="case7btn" class="casebtn" type="image" src="RessourcesCSS/quarry.png" onclick="ressourcestone()">
+				</div>
 			
-			<div id="case6" class="case">	
-			<p>CASE 6</p>	
-			</div>
+				<div id="case8" class="case">	
+				<p id="case8btn" class="casebtn"></p>				
+				</div>
 			
-			<div id="case7" class="case">
-				<input type="image" src="RessourcesCSS/iconestone.png">
-			</div>
-			
-			<div id="case8" class="case">	
-			<p>CASE 8</p>				
-			</div>
-			
-			<div id="case9" class="case">
-				<input type="image" src="RessourcesCSS/iconemetal.png">
+				<div id="case9" class="case">
+					<input id="case9btn" class="casebtn" type="image" src="RessourcesCSS/item_minefinal.png" onclick="ressourcemetal()">
+				</div>
 			</div>
 		</div>
-
+	  </div>	
 		<div id="gestion">
 			<ul>
-				<li id="gestionwood">
-					<img src="RessourcesCSS/iconewoodindex.png">
+				<li >
+					<span id="gestionwood">0</span><img class="icones" src="RessourcesCSS/iconewoodindex.png">
 				</li>
-				<li id="gestionstone">
-					<img src="RessourcesCSS/iconestoneindex.png">
+				<li >
+					<span id="gestionstone">0</span><img class="icones" src="RessourcesCSS/iconestoneindex.png">
 				</li>
-				<li id="gestionmetal">
-					<img src="RessourcesCSS/iconemetalindex.png">
+				<li >
+					<span id="gestionmetal">0</span><img class="icones"src="RessourcesCSS/iconemetalindex.png">
 				</li>
 
 				<li>
-					<button type="button" id="magasinbtn">magasinbtn</button>
+					<button type="button" id="magasinbtn">Boutique</button>
 				</li>
 			</ul>
 		</div>
@@ -73,12 +174,19 @@
 	</div>
 
 	<footer id="signature">
-		<p></p>
-	</footer>	
+		<p>Le Copyright © 2019</p>
+		<p>All rights reserved: Sacha, Tom et Pierre</p>
+	</footer>
 
 
 
-
+<script src="FarmStellarJS.js"></script>
+<script type="text/javascript">
+	var span = document.getElementsByClassName("close");
+	span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 
 </body>
 </html>
